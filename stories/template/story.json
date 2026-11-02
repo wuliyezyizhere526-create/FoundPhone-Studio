@@ -1,699 +1,659 @@
 {
   "scriptVersion": 1,
-  "id": "ui-test-phone-v2",
-  "title": "捡手机",
-  "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "id": "itzy-yuna-secret-crush",
+  "title": "偏心的秘密｜申有娜的手机",
+  "description": "虚构互动故事。玩家扮演成年艺人申有娜，在 ITZY 的日常、私聊和社交媒体中体验一段尚未说出口的暗恋。",
+  "revision": 6,
   "phone": {
-    "owner": "机主",
-    "date": "2026-10-25",
-    "time": "09:41",
-    "battery": 94,
+    "owner": "申有娜",
+    "date": "2026-11-02",
+    "time": "21:06",
+    "battery": 87,
     "network": "5G",
-    "wallpaper": "apple-wwdc26"
+    "passcode": "0526",
+    "wallpaper": "photo",
+    "theme": "light",
+    "notifications": true
   },
   "installedApps": [
-    "appstore",
     {
-      "id": "wechat",
-      "name": "微信",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "douyin",
-      "name": "抖音",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    "phone",
-    "messages",
-    "contacts",
-    "photos",
-    {
-      "id": "camera",
-      "name": "相机",
+      "id": "phone",
+      "name": "phone",
       "installed": true,
       "visible": true,
       "dock": true,
       "folder": "",
       "icon": ""
     },
-    "safari",
-    "notes",
-    "calendar",
-    "mail",
-    "clock",
-    "reminders",
-    "files",
-    "music",
-    "maps",
-    "weather",
-    "wallet",
-    "health",
-    "find",
-    "calculator",
-    "settings",
-    "qq",
-    "weibo",
-    "redbook",
-    "bilibili",
-    "alipay",
-    "taobao",
-    "netease",
-    "delivery",
-    "forum",
-    "whatsapp",
-    "instagram",
-    "tiktok",
-    "twitter",
-    "telegram",
-    "discord",
-    "youtube",
-    "line",
-    "snapchat",
-    "facebook",
-    "messenger",
-    "reddit",
-    "spotify",
-    "netflix",
-    "pinterest",
-    "threads",
-    "kakao"
+    {
+      "id": "messages",
+      "name": "messages",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "contacts",
+      "name": "contacts",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "photos",
+      "name": "photos",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "camera",
+      "name": "camera",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "safari",
+      "name": "safari",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "notes",
+      "name": "notes",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "calendar",
+      "name": "calendar",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "clock",
+      "name": "clock",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "music",
+      "name": "music",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "maps",
+      "name": "maps",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "settings",
+      "name": "settings",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "kakao",
+      "name": "KakaoTalk",
+      "installed": true,
+      "visible": true,
+      "dock": true,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "installed": true,
+      "visible": true,
+      "dock": true,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "twitter",
+      "name": "X",
+      "installed": true,
+      "visible": true,
+      "dock": true,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    }
   ],
   "contacts": [
     {
-      "id": "test-contact",
-      "name": "测试联系人",
-      "phone": "",
-      "bio": "这是一条测试内容。"
+      "id": "yeji",
+      "name": "礼志姐姐💗",
+      "phone": "010-0000-0526",
+      "bio": "ITZY 队长。做事认真、责任感强，私下会照顾成员。"
+    },
+    {
+      "id": "lia",
+      "name": "Lia",
+      "phone": "010-0000-0527",
+      "bio": "ITZY 成员，温柔细腻。"
+    },
+    {
+      "id": "ryujin",
+      "name": "留真",
+      "phone": "010-0000-0528",
+      "bio": "ITZY 成员，直率敏锐，喜欢开玩笑。"
+    },
+    {
+      "id": "chaeryeong",
+      "name": "彩领",
+      "phone": "010-0000-0529",
+      "bio": "ITZY 成员，细心温和。"
     }
   ],
   "chats": [
     {
-      "id": "test-chat-messages",
-      "app": "messages",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messages",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-wechat",
-      "app": "wechat",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-wechat",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-qq",
-      "app": "qq",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-qq",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-whatsapp",
-      "app": "whatsapp",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-whatsapp",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-telegram",
-      "app": "telegram",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-telegram",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-discord",
-      "app": "discord",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-discord",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-line",
-      "app": "line",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-line",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-messenger",
-      "app": "messenger",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messenger",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-kakao",
+      "id": "itzy-room",
       "app": "kakao",
-      "title": "测试会话",
+      "title": "ITZY 💗",
       "participants": [
         "owner",
-        "test-contact"
+        "yeji",
+        "lia",
+        "ryujin",
+        "chaeryeong"
       ],
       "messages": [
         {
-          "id": "test-message-kakao",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
+          "id": "itzy-room-1",
+          "body": "今天练习结束后大家一起吃饭吗？我看附近新开了一家汤饭店。",
+          "senderId": "yeji",
+          "time": "2026-11-02 18:12"
         },
         {
-          "id": "test-reply-kakao",
-          "body": "这是一条测试回复。",
-          "senderId": "owner"
+          "id": "itzy-room-2",
+          "body": "我可以！！今天真的好饿ㅋㅋ",
+          "senderId": "lia",
+          "time": "2026-11-02 18:13"
+        },
+        {
+          "id": "itzy-room-3",
+          "body": "有娜呢？不要又说随便，最后点两人份。",
+          "senderId": "ryujin",
+          "time": "2026-11-02 18:13"
+        },
+        {
+          "id": "itzy-room-4",
+          "body": "呀ㅋㅋ 我那是帮大家试味道。",
+          "senderId": "owner",
+          "time": "2026-11-02 18:14"
+        },
+        {
+          "id": "itzy-room-5",
+          "body": "我想吃汤饭，天气变冷了。",
+          "senderId": "chaeryeong",
+          "time": "2026-11-02 18:15"
+        },
+        {
+          "id": "itzy-room-6",
+          "body": "那就六点半出发。练习室收拾好再走。",
+          "senderId": "yeji",
+          "time": "2026-11-02 18:16"
+        },
+        {
+          "id": "itzy-room-7",
+          "body": "队长nim收到！我会负责拿纸巾。",
+          "senderId": "owner",
+          "time": "2026-11-02 18:17"
+        },
+        {
+          "id": "itzy-room-8",
+          "body": "只拿纸巾？那谁负责结账ㅋㅋ",
+          "senderId": "ryujin",
+          "time": "2026-11-02 18:17"
+        },
+        {
+          "id": "itzy-room-9",
+          "body": "让有娜负责点甜品！",
+          "senderId": "lia",
+          "time": "2026-11-02 18:18"
+        },
+        {
+          "id": "itzy-room-10",
+          "body": "这个任务我可以。",
+          "senderId": "owner",
+          "time": "2026-11-02 18:18"
+        },
+        {
+          "id": "itzy-room-11",
+          "body": "先吃正餐。甜品等吃完再说。",
+          "senderId": "yeji",
+          "time": "2026-11-02 18:19"
+        }
+      ]
+    },
+    {
+      "id": "dm-yeji",
+      "app": "kakao",
+      "title": "礼志姐姐💗",
+      "participants": [
+        "owner",
+        "yeji"
+      ],
+      "messages": [
+        {
+          "id": "dm-yeji-1",
+          "body": "有娜，今天回宿舍了吗？外面好像要下雨。",
+          "senderId": "yeji",
+          "time": "2026-11-02 20:41"
+        },
+        {
+          "id": "dm-yeji-2",
+          "body": "还在楼下便利店！姐姐要我带什么吗？",
+          "senderId": "owner",
+          "time": "2026-11-02 20:43"
+        },
+        {
+          "id": "dm-yeji-3",
+          "body": "不用啦。买你自己的就好，别又只买甜的。",
+          "senderId": "yeji",
+          "time": "2026-11-02 20:44"
+        },
+        {
+          "id": "dm-yeji-4",
+          "body": "我今天有买饭团！还有一小盒布丁。",
+          "senderId": "owner",
+          "time": "2026-11-02 20:45"
+        },
+        {
+          "id": "dm-yeji-5",
+          "body": "ㅋㅋㅋ 果然还是有布丁。",
+          "senderId": "yeji",
+          "time": "2026-11-02 20:46"
+        },
+        {
+          "id": "dm-yeji-6",
+          "body": "姐姐上次不是说那个牌子好吃吗？",
+          "senderId": "owner",
+          "time": "2026-11-02 20:47"
+        },
+        {
+          "id": "dm-yeji-7",
+          "body": "我只是说还不错，没让你特意去买。",
+          "senderId": "yeji",
+          "time": "2026-11-02 20:49"
+        },
+        {
+          "id": "dm-yeji-8",
+          "body": "顺路嘛。姐姐今天也辛苦了。",
+          "senderId": "owner",
+          "time": "2026-11-02 20:50"
+        },
+        {
+          "id": "dm-yeji-9",
+          "body": "嗯。到宿舍告诉我一声。",
+          "senderId": "yeji",
+          "time": "2026-11-02 20:51"
+        }
+      ]
+    },
+    {
+      "id": "dm-lia",
+      "app": "kakao",
+      "title": "Lia",
+      "participants": [
+        "owner",
+        "lia"
+      ],
+      "messages": [
+        {
+          "id": "dm-lia-1",
+          "body": "有娜呀，明天出门记得带外套！早上会降温。",
+          "senderId": "lia",
+          "time": "2026-11-02 17:50"
+        },
+        {
+          "id": "dm-lia-2",
+          "body": "收到～姐姐也是！",
+          "senderId": "owner",
+          "time": "2026-11-02 17:52"
+        },
+        {
+          "id": "dm-lia-3",
+          "body": "还有，今天拍的照片发我一张ㅋㅋ",
+          "senderId": "lia",
+          "time": "2026-11-02 17:53"
+        }
+      ]
+    },
+    {
+      "id": "dm-ryujin",
+      "app": "kakao",
+      "title": "留真",
+      "participants": [
+        "owner",
+        "ryujin"
+      ],
+      "messages": [
+        {
+          "id": "dm-ryujin-1",
+          "body": "你刚刚是不是又在看队长？ㅋㅋ",
+          "senderId": "ryujin",
+          "time": "2026-11-02 19:02"
+        },
+        {
+          "id": "dm-ryujin-2",
+          "body": "？我在看菜单。",
+          "senderId": "owner",
+          "time": "2026-11-02 19:03"
+        },
+        {
+          "id": "dm-ryujin-3",
+          "body": "菜单在队长手机上吗？",
+          "senderId": "ryujin",
+          "time": "2026-11-02 19:04"
+        },
+        {
+          "id": "dm-ryujin-4",
+          "body": "申留真，你最近真的很闲。",
+          "senderId": "owner",
+          "time": "2026-11-02 19:05"
+        }
+      ]
+    },
+    {
+      "id": "dm-chaeryeong",
+      "app": "kakao",
+      "title": "彩领",
+      "participants": [
+        "owner",
+        "chaeryeong"
+      ],
+      "messages": [
+        {
+          "id": "dm-chaeryeong-1",
+          "body": "有娜，明天能不能教我拍你那个自拍角度？",
+          "senderId": "chaeryeong",
+          "time": "2026-11-02 16:22"
+        },
+        {
+          "id": "dm-chaeryeong-2",
+          "body": "当然可以！包教包会～",
+          "senderId": "owner",
+          "time": "2026-11-02 16:23"
+        },
+        {
+          "id": "dm-chaeryeong-3",
+          "body": "那我明天带相机。晚安！",
+          "senderId": "chaeryeong",
+          "time": "2026-11-02 22:01"
         }
       ]
     }
   ],
   "content": {
-    "phone": [
-      {
-        "id": "test-item-phone",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "contacts": [
-      {
-        "id": "test-item-contacts",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "photos": [
-      {
-        "id": "test-item-photos",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "camera": [
-      {
-        "id": "test-item-camera",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "safari": [
-      {
-        "id": "test-item-safari",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
+    "phone": [],
+    "messages": [],
+    "contacts": [],
+    "photos": [],
+    "camera": [],
+    "safari": [],
     "notes": [
       {
-        "id": "test-item-notes",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "note-yuna-01",
+        "title": "今天要记得的事",
+        "body": "1. 明天练习前买蜂蜜柚子茶。\\n2. 给姐姐留一份布丁。\\n3. 小号不要发练习室镜子里的反光。\\n4. 不要在姐姐面前表现得太明显。",
+        "sender": "有娜",
+        "time": "2026-11-02 23:01",
+        "kind": "note"
       }
     ],
-    "calendar": [
-      {
-        "id": "test-item-calendar",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "mail": [
-      {
-        "id": "test-item-mail",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "clock": [
-      {
-        "id": "test-item-clock",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reminders": [
-      {
-        "id": "test-item-reminders",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "files": [
-      {
-        "id": "test-item-files",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "music": [
-      {
-        "id": "test-item-music",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "maps": [
-      {
-        "id": "test-item-maps",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weather": [
-      {
-        "id": "test-item-weather",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "wallet": [
-      {
-        "id": "test-item-wallet",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "health": [
-      {
-        "id": "test-item-health",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "find": [
-      {
-        "id": "test-item-find",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "calculator": [
-      {
-        "id": "test-item-calculator",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "settings": [
-      {
-        "id": "test-item-settings",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weibo": [
-      {
-        "id": "test-item-weibo",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "redbook": [
-      {
-        "id": "test-item-redbook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "douyin": [
-      {
-        "id": "test-item-douyin",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "bilibili": [
-      {
-        "id": "test-item-bilibili",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "alipay": [
-      {
-        "id": "test-item-alipay",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "taobao": [
-      {
-        "id": "test-item-taobao",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netease": [
-      {
-        "id": "test-item-netease",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "delivery": [
-      {
-        "id": "test-item-delivery",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "forum": [
-      {
-        "id": "test-item-forum",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
+    "kakao": [],
     "instagram": [
       {
-        "id": "test-item-instagram",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "tiktok": [
+        "id": "ig-main-01",
+        "title": "练习结束！",
+        "body": "今天也和大家一起完成了练习。回家的路上风很舒服🍂",
+        "sender": "@igotyou_na",
+        "time": "2026-10-29 21:14",
+        "kind": "post",
+        "folder": "大号",
+        "meta": {
+          "account": "public",
+          "handle": "@igotyou_na",
+          "location": "Seoul",
+          "likes": "186420"
+        },
+        "comments": [
+          "Lia: 今天辛苦啦💗",
+          "MIDZY: 有娜今天也好漂亮！"
+        ],
+        "likes": 186420
+      },
       {
-        "id": "test-item-tiktok",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "ig-main-02",
+        "title": "🍰",
+        "body": "练习结束后的奖励！今天的蛋糕真的很好吃ㅋㅋ",
+        "sender": "@igotyou_na",
+        "time": "2026-10-31 22:06",
+        "kind": "post",
+        "folder": "大号",
+        "meta": {
+          "account": "public",
+          "handle": "@igotyou_na",
+          "location": "Seoul",
+          "likes": "203118"
+        },
+        "comments": [
+          "礼志: 看起来很好吃",
+          "有娜: 下次一起去！"
+        ],
+        "likes": 203118
+      },
+      {
+        "id": "ig-main-03",
+        "title": "🖤",
+        "body": "最近喜欢这种天气。大家也要好好吃饭、好好休息。",
+        "sender": "@igotyou_na",
+        "time": "2026-11-02 20:10",
+        "kind": "post",
+        "folder": "大号",
+        "meta": {
+          "account": "public",
+          "handle": "@igotyou_na",
+          "likes": "128430"
+        },
+        "comments": [
+          "MIDZY: 姐姐也要幸福！"
+        ],
+        "likes": 128430
+      },
+      {
+        "id": "ig-alt-01",
+        "title": "没有特别的事",
+        "body": "她今天把头发别到耳后了。明明是很普通的动作，我却记了好久。",
+        "sender": "@not_a_bias_just_a_person",
+        "time": "2026-10-28 23:48",
+        "kind": "post",
+        "folder": "小号",
+        "meta": {
+          "account": "private",
+          "handle": "@not_a_bias_just_a_person",
+          "likes": "37"
+        },
+        "comments": [
+          "匿名用户: 又在说队长ㅋㅋ"
+        ],
+        "likes": 37
+      },
+      {
+        "id": "ig-alt-02",
+        "title": "🍵",
+        "body": "她说最近睡得不太好。希望今天能早点休息。",
+        "sender": "@not_a_bias_just_a_person",
+        "time": "2026-10-30 00:12",
+        "kind": "post",
+        "folder": "小号",
+        "meta": {
+          "account": "private",
+          "handle": "@not_a_bias_just_a_person",
+          "likes": "24"
+        },
+        "comments": [
+          "匿名用户: 姐姐粉真的好细心"
+        ],
+        "likes": 24
+      },
+      {
+        "id": "ig-alt-03",
+        "title": "",
+        "body": "有人总是把最后一颗糖留给别人。",
+        "sender": "@not_a_bias_just_a_person",
+        "time": "2026-11-02 22:20",
+        "kind": "post",
+        "folder": "小号",
+        "meta": {
+          "account": "private",
+          "handle": "@not_a_bias_just_a_person",
+          "likes": "19"
+        },
+        "comments": [
+          "匿名用户: 你到底有多偏心礼志ㅋㅋ"
+        ],
+        "likes": 19
+      },
+      {
+        "id": "ig-alt-story",
+        "title": "Story",
+        "body": "今天也希望她顺利。",
+        "sender": "@not_a_bias_just_a_person",
+        "time": "2026-11-02 22:22",
+        "kind": "post",
+        "folder": "小号",
+        "meta": {
+          "account": "private",
+          "story": "true",
+          "handle": "@not_a_bias_just_a_person"
+        },
+        "comments": [],
+        "likes": 0
       }
     ],
     "twitter": [
       {
-        "id": "test-item-twitter",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "youtube": [
-      {
-        "id": "test-item-youtube",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "snapchat": [
-      {
-        "id": "test-item-snapchat",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "facebook": [
-      {
-        "id": "test-item-facebook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reddit": [
-      {
-        "id": "test-item-reddit",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "spotify": [
-      {
-        "id": "test-item-spotify",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netflix": [
-      {
-        "id": "test-item-netflix",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "pinterest": [
-      {
-        "id": "test-item-pinterest",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "threads": [
-      {
-        "id": "test-item-threads",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      },
-      {
-        "id": "test-threads-message-1",
-        "title": "测试会话1",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人1",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-1",
-        "title": "测试动态1",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户1",
+        "id": "x-alt-01",
+        "title": "",
+        "body": "偏心？可能吧。可是她值得。",
+        "sender": "@bluehour0526",
+        "time": "2026-10-30 23:11",
+        "kind": "post",
+        "folder": "小号",
         "meta": {
-          "activityType": "reply"
-        }
+          "account": "private",
+          "handle": "@bluehour0526",
+          "views": "1240"
+        },
+        "comments": [
+          "这不就是礼志单推吗ㅋㅋ",
+          "CPF滤镜太厚了吧"
+        ],
+        "likes": 12
       },
       {
-        "id": "test-threads-message-2",
-        "title": "测试会话2",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人2",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-2",
-        "title": "测试动态2",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户2",
+        "id": "x-alt-02",
+        "title": "",
+        "body": "今天又看到她在所有人都走了以后，独自确认练习室的灯。队长真的很辛苦。",
+        "sender": "@bluehour0526",
+        "time": "2026-11-01 00:03",
+        "kind": "post",
+        "folder": "小号",
         "meta": {
-          "activityType": "reply"
-        }
+          "account": "private",
+          "handle": "@bluehour0526",
+          "views": "890"
+        },
+        "comments": [
+          "你怎么知道这么多细节？",
+          "可能是看直拍看的吧（？）"
+        ],
+        "likes": 8
       },
       {
-        "id": "test-threads-message-3",
-        "title": "测试会话3",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人3",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-3",
-        "title": "测试动态3",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户3",
+        "id": "x-fan-01",
+        "title": "粉丝讨论",
+        "body": "有人关注那个总给队长单独做应援的账号吗？一开始以为是普通 CPF，最近发的东西也太像内部视角了吧……",
+        "sender": "MIDZY观察站",
+        "time": "2026-11-02 22:40",
+        "kind": "post",
+        "folder": "讨论",
         "meta": {
-          "activityType": "reply"
-        }
+          "account": "feed",
+          "handle": "@midzy_watch",
+          "views": "18500"
+        },
+        "comments": [
+          "这个号真的很偏心礼志ㅋㅋ",
+          "但有些细节好奇怪",
+          "先别乱猜啦"
+        ],
+        "likes": 286
       }
     ],
-    "appstore": [
-      {
-        "id": "test-appstore",
-        "title": "测试内容",
-        "body": "这是一条测试内容。"
-      }
-    ]
+    "youtube": [],
+    "spotify": [],
+    "music": [],
+    "calendar": []
   },
-  "variables": {},
+  "variables": {
+    "affection_yeji": 20,
+    "fan_suspicion": 3,
+    "alt_account_exposure": 0
+  },
   "events": [],
   "tests": []
 }
