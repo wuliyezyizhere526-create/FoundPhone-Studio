@@ -230,7 +230,8 @@ function PhoneRuntime({
     if (creator || !ready) return;
     const interval = setInterval(() => {
       const previous = runtimeRef.current;
-      const next = advance(work, previous, 1000);
+      // Story time runs at 3x real time so ordinary days move forward more naturally.
+      const next = advance(work, previous, 3000);
       runtimeRef.current = next;
       const changed =
         next.time !== previous.time ||
