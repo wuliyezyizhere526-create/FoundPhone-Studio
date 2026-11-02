@@ -230,8 +230,9 @@ function PhoneRuntime({
     if (creator || !ready) return;
     const interval = setInterval(() => {
       const previous = runtimeRef.current;
-      // Story time runs at 3x real time so ordinary days move forward more naturally.
-      const next = advance(work, previous, 3000);
+      // Outside conversations, one real minute advances one in-game hour.
+      // Keep a 1:1 clock while KakaoTalk is open so live conversations have room to breathe.
+      const next = advance(work, previous, app === "kakao" ? 1000 : 60000);
       runtimeRef.current = next;
       const changed =
         next.time !== previous.time ||
@@ -243,7 +244,7 @@ function PhoneRuntime({
       if (changed) update(next);
     }, 1000);
     return () => clearInterval(interval);
-  }, [creator, ready, work.id, work.updatedAt]);
+  }, [app, creator, ready, work.id, work.updatedAt]);
   const event = (event: string, target: string) => {
     if (!creator) update(dispatch(work, runtimeRef.current, event, target));
   };
