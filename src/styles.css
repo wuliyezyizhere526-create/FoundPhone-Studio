@@ -4929,14 +4929,3 @@ label {
 .wallpaper-photo .wallpaper-orb {
   display: none;
 }
-
-
-/* Personal lock-screen wallpaper for the Yuna story. */
-.wallpaper-photo {
-  background-image: url("./assets/yuna-wallpaper.svg");
-  background-size: cover;
-  background-position: center center;
-}
-.wallpaper-photo .wallpaper-orb {
-  display: none;
-}
