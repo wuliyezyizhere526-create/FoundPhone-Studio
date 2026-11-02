@@ -75,7 +75,7 @@ export function MymyKakao(p: SkinProps) {
           const entry: unknown = JSON.parse(raw);
           if (
             !Array.isArray(entry) ||
-            entry.length !== 3 ||
+            ![3, 5].includes(entry.length) ||
             !entry.every((v) => typeof v === "string") ||
             entry[0] !== p.thread
           )
