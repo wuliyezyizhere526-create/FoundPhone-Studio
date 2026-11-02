@@ -165,7 +165,6 @@ export function MymyKakao(p: SkinProps) {
                 const reply = (body: string, sender: string) =>
                   JSON.stringify([p.thread, body, stamp, sender, "incoming"]);
                 const own = JSON.stringify([p.thread, text, stamp, p.owner || "有娜", "outgoing"]);
-                const lower = text.toLowerCase();
                 let incoming: string[] = [];
                 if (p.thread === "礼志姐姐💗") {
                   const answer = /累|辛苦|练习/.test(text)
