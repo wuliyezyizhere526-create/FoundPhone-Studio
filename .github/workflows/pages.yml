@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: [main]
+    branches: [main, feature/itzy-yuna-phone-simulator]
   workflow_dispatch:
 permissions:
   contents: read
@@ -29,7 +29,7 @@ jobs:
       - run: npm run story:test
       - run: npm run build
       - uses: actions/configure-pages@v5
-        if: github.event_name != 'pull_request'
+        if: github.ref == 'refs/heads/main'
       - uses: actions/upload-pages-artifact@v4
         if: github.event_name != 'pull_request'
         with:
