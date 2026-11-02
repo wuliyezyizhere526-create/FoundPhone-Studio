@@ -86,8 +86,8 @@ export function MymyKakao(p: SkinProps) {
               title: entry[0],
               body: entry[1],
               time: entry[2],
-              sender: p.owner || "机主",
-              outgoing: true,
+              sender: entry[3] || p.owner || "机主",
+              outgoing: entry[4] !== "incoming",
               meta: { local: "true" },
             }),
           ];
@@ -160,14 +160,39 @@ export function MymyKakao(p: SkinProps) {
             onSubmit={(e) => {
               e.preventDefault();
               if (draft.trim()) {
-                setSent([
-                  ...sent,
-                  JSON.stringify([
-                    p.thread,
-                    draft.trim(),
-                    p.virtualTime || "09:41",
-                  ]),
-                ]);
+                const text = draft.trim();
+                const stamp = p.virtualTime || "09:41";
+                const reply = (body: string, sender: string) =>
+                  JSON.stringify([p.thread, body, stamp, sender, "incoming"]);
+                const own = JSON.stringify([p.thread, text, stamp, p.owner || "有娜", "outgoing"]);
+                const lower = text.toLowerCase();
+                let incoming: string[] = [];
+                if (p.thread === "礼志姐姐💗") {
+                  const answer = /累|辛苦|练习/.test(text)
+                    ? "今天也辛苦了。回去记得早点休息，不要又熬夜。"
+                    : /想你|想姐姐|喜欢/.test(text)
+                      ? "ㅋㅋㅋ 怎么突然这样说。先把外套穿好，外面冷。"
+                      : /吃|饭|饿/.test(text)
+                        ? "我刚吃过一点。你呢？不要只买甜食。"
+                        : /晚安|睡/.test(text)
+                          ? "晚安，有娜。明天见。"
+                          : "嗯，我看到了。你先忙，等会儿再聊。";
+                  incoming = [reply(answer, "礼志姐姐💗")];
+                } else if (p.thread === "ITZY 💗") {
+                  incoming = [
+                    reply("ㅋㅋㅋㅋ 有娜又开始了", "留真"),
+                    reply("你们先决定，我都可以！", "Lia"),
+                  ];
+                } else if (p.thread === "留真") {
+                  incoming = [reply(/ㅋㅋ|哈哈/.test(text) ? "笑什么ㅋㅋ 我是认真的。" : "知道了，我不会告诉姐姐的。", "留真")];
+                } else if (p.thread === "Lia") {
+                  incoming = [reply("好呀～等会儿见！记得吃饭。", "Lia")];
+                } else if (p.thread === "彩领") {
+                  incoming = [reply("好！那我等你消息～", "彩领")];
+                } else {
+                  incoming = [reply("嗯嗯，知道啦！", p.thread)];
+                }
+                setSent([...sent, own, ...incoming]);
                 setDraft("");
               }
             }}
@@ -324,10 +349,14 @@ export function MymyInstagram(p: SkinProps) {
     [story, setStory] = useState(0),
     [draft, setDraft] = useState(""),
     [pop, setPop] = useState("");
-  const posts = p.items.filter(
+  const [account, setAccount] = useSkinState<string>(p, "mymyIGAccount", "public");
+  const accountItems = p.items.filter(
+    (i) => !i.meta.account || i.meta.account === account,
+  );
+  const posts = accountItems.filter(
       (i) => i.folder !== "私信" && i.meta.story !== "true",
     ),
-    stories = p.items.filter((i) => i.meta.story === "true"),
+    stories = accountItems.filter((i) => i.meta.story === "true"),
     dms = p.items.filter((i) => i.folder === "私信"),
     active = stories[story - 1];
   const toggle = (id: string, values: string[], set: (v: string[]) => void) =>
@@ -443,8 +472,20 @@ export function MymyInstagram(p: SkinProps) {
             <ArrowLeft />
           </button>
           <span className="igl2">
-            {selected ? "帖子" : tab === "主页" ? "Instagram" : tab}
+            {selected ? "帖子" : tab === "主页" ? (account === "public" ? "@igotyou_na" : "@not_a_bias_just_a_person") : tab}
           </span>
+          <button
+            aria-label="切换Instagram账号"
+            title="切换大号 / 小号"
+            onClick={() => {
+              setAccount(account === "public" ? "private" : "public");
+              setSelected(null);
+              setSheet(null);
+              setTab("主页");
+            }}
+          >
+            {account === "public" ? "大号" : "小号"}
+          </button>
           <button aria-label="打开私信" onClick={() => setTab("私信")}>
             <Send />
           </button>
