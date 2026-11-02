@@ -166,8 +166,9 @@ export function MymyKakao(p: SkinProps) {
                   JSON.stringify([p.thread, body, stamp, sender, "incoming"]);
                 const own = JSON.stringify([p.thread, text, stamp, p.owner || "有娜", "outgoing"]);
                 let incoming: string[] = [];
+                let yejiReply = "";
                 if (p.thread === "礼志姐姐💗") {
-                  const answer = /累|辛苦|练习/.test(text)
+                  yejiReply = /累|辛苦|练习/.test(text)
                     ? "今天也辛苦了。回去记得早点休息，不要又熬夜。"
                     : /想你|想姐姐|喜欢/.test(text)
                       ? "ㅋㅋㅋ 怎么突然这样说。先把外套穿好，外面冷。"
@@ -176,7 +177,7 @@ export function MymyKakao(p: SkinProps) {
                         : /晚安|睡/.test(text)
                           ? "晚安，有娜。明天见。"
                           : "嗯，我看到了。你先忙，等会儿再聊。";
-                  incoming = [reply(answer, "礼志姐姐💗")];
+                  incoming = [reply(yejiReply, "礼志姐姐💗")];
                 } else if (p.thread === "ITZY 💗") {
                   incoming = [
                     reply("ㅋㅋㅋㅋ 有娜又开始了", "留真"),
@@ -192,6 +193,9 @@ export function MymyKakao(p: SkinProps) {
                   incoming = [reply("嗯嗯，知道啦！", p.thread)];
                 }
                 setSent([...sent, own, ...incoming]);
+                if (p.thread === "礼志姐姐💗") {
+                  p.onUi?.("yejiInteraction", JSON.stringify({ text, reply: yejiReply, time: stamp }));
+                }
                 setDraft("");
               }
             }}
