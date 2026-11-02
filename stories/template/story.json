@@ -1,60 +1,199 @@
 {
   "scriptVersion": 1,
-  "id": "itzy-yuna-phone",
-  "title": "偏心的秘密",
-  "description": "虚构互动故事：玩家扮演成年艺人申有娜，在手机中体验组合日常、暗恋与粉丝推理。",
+  "id": "itzy-yuna-secret-crush",
+  "title": "偏心的秘密｜申有娜的手机",
+  "description": "虚构互动故事。玩家扮演成年艺人申有娜，在 ITZY 的日常、私聊和社交媒体中体验一段尚未说出口的暗恋。",
   "revision": 3,
   "phone": {
-    "owner": "有娜",
+    "owner": "申有娜",
     "date": "2026-11-02",
     "time": "21:06",
     "battery": 87,
     "network": "5G",
     "passcode": "0526",
     "wallpaper": "sage",
-    "theme": "light"
+    "theme": "light",
+    "notifications": true
   },
   "installedApps": [
-    "phone",
-    "contacts",
-    "photos",
-    "camera",
-    "settings",
-    "kakao",
-    "instagram",
-    "twitter",
-    "youtube",
-    "spotify",
-    "music",
-    "calendar",
-    "notes",
-    "safari",
-    "appstore"
+    {
+      "id": "phone",
+      "name": "phone",
+      "installed": true,
+      "visible": true,
+      "dock": true,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "messages",
+      "name": "messages",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "contacts",
+      "name": "contacts",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "photos",
+      "name": "photos",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "camera",
+      "name": "camera",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "safari",
+      "name": "safari",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "notes",
+      "name": "notes",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "calendar",
+      "name": "calendar",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "clock",
+      "name": "clock",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "music",
+      "name": "music",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "maps",
+      "name": "maps",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "settings",
+      "name": "settings",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "kakao",
+      "name": "KakaoTalk",
+      "installed": true,
+      "visible": true,
+      "dock": true,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "installed": true,
+      "visible": true,
+      "dock": true,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "twitter",
+      "name": "X",
+      "installed": true,
+      "visible": true,
+      "dock": true,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    }
   ],
   "contacts": [
     {
       "id": "yeji",
       "name": "礼志姐姐💗",
-      "phone": "",
-      "bio": "虚构故事角色：组合队长"
+      "phone": "010-0000-0526",
+      "bio": "ITZY 队长。做事认真、责任感强，私下会照顾成员。"
     },
     {
       "id": "lia",
       "name": "Lia",
-      "phone": "",
-      "bio": "组合成员"
+      "phone": "010-0000-0527",
+      "bio": "ITZY 成员，温柔细腻。"
     },
     {
       "id": "ryujin",
       "name": "留真",
-      "phone": "",
-      "bio": "组合成员"
+      "phone": "010-0000-0528",
+      "bio": "ITZY 成员，直率敏锐，喜欢开玩笑。"
     },
     {
       "id": "chaeryeong",
       "name": "彩领",
-      "phone": "",
-      "bio": "组合成员"
+      "phone": "010-0000-0529",
+      "bio": "ITZY 成员，细心温和。"
     }
   ],
   "chats": [
@@ -71,28 +210,70 @@
       ],
       "messages": [
         {
-          "id": "m1",
-          "body": "今天练习结束后要不要一起吃饭？",
+          "id": "itzy-room-1",
+          "body": "今天练习结束后大家一起吃饭吗？我看附近新开了一家汤饭店。",
           "senderId": "yeji",
           "time": "2026-11-02 18:12"
         },
         {
-          "id": "m2",
-          "body": "去！！我今天真的饿了ㅋㅋ",
+          "id": "itzy-room-2",
+          "body": "我可以！！今天真的好饿ㅋㅋ",
           "senderId": "lia",
           "time": "2026-11-02 18:13"
         },
         {
-          "id": "m3",
-          "body": "有娜呢？不要又说随便。",
+          "id": "itzy-room-3",
+          "body": "有娜呢？不要又说随便，最后点两人份。",
           "senderId": "ryujin",
+          "time": "2026-11-02 18:13"
+        },
+        {
+          "id": "itzy-room-4",
+          "body": "呀ㅋㅋ 我那是帮大家试味道。",
+          "senderId": "owner",
           "time": "2026-11-02 18:14"
         },
         {
-          "id": "m4",
-          "body": "我都可以～",
-          "senderId": "owner",
+          "id": "itzy-room-5",
+          "body": "我想吃汤饭，天气变冷了。",
+          "senderId": "chaeryeong",
           "time": "2026-11-02 18:15"
+        },
+        {
+          "id": "itzy-room-6",
+          "body": "那就六点半出发。练习室收拾好再走。",
+          "senderId": "yeji",
+          "time": "2026-11-02 18:16"
+        },
+        {
+          "id": "itzy-room-7",
+          "body": "队长nim收到！我会负责拿纸巾。",
+          "senderId": "owner",
+          "time": "2026-11-02 18:17"
+        },
+        {
+          "id": "itzy-room-8",
+          "body": "只拿纸巾？那谁负责结账ㅋㅋ",
+          "senderId": "ryujin",
+          "time": "2026-11-02 18:17"
+        },
+        {
+          "id": "itzy-room-9",
+          "body": "让有娜负责点甜品！",
+          "senderId": "lia",
+          "time": "2026-11-02 18:18"
+        },
+        {
+          "id": "itzy-room-10",
+          "body": "这个任务我可以。",
+          "senderId": "owner",
+          "time": "2026-11-02 18:18"
+        },
+        {
+          "id": "itzy-room-11",
+          "body": "先吃正餐。甜品等吃完再说。",
+          "senderId": "yeji",
+          "time": "2026-11-02 18:19"
         }
       ]
     },
@@ -106,22 +287,58 @@
       ],
       "messages": [
         {
-          "id": "y1",
+          "id": "dm-yeji-1",
           "body": "有娜，今天回宿舍了吗？外面好像要下雨。",
           "senderId": "yeji",
           "time": "2026-11-02 20:41"
         },
         {
-          "id": "y2",
+          "id": "dm-yeji-2",
           "body": "还在楼下便利店！姐姐要我带什么吗？",
           "senderId": "owner",
           "time": "2026-11-02 20:43"
         },
         {
-          "id": "y3",
+          "id": "dm-yeji-3",
           "body": "不用啦。买你自己的就好，别又只买甜的。",
           "senderId": "yeji",
           "time": "2026-11-02 20:44"
+        },
+        {
+          "id": "dm-yeji-4",
+          "body": "我今天有买饭团！还有一小盒布丁。",
+          "senderId": "owner",
+          "time": "2026-11-02 20:45"
+        },
+        {
+          "id": "dm-yeji-5",
+          "body": "ㅋㅋㅋ 果然还是有布丁。",
+          "senderId": "yeji",
+          "time": "2026-11-02 20:46"
+        },
+        {
+          "id": "dm-yeji-6",
+          "body": "姐姐上次不是说那个牌子好吃吗？",
+          "senderId": "owner",
+          "time": "2026-11-02 20:47"
+        },
+        {
+          "id": "dm-yeji-7",
+          "body": "我只是说还不错，没让你特意去买。",
+          "senderId": "yeji",
+          "time": "2026-11-02 20:49"
+        },
+        {
+          "id": "dm-yeji-8",
+          "body": "顺路嘛。姐姐今天也辛苦了。",
+          "senderId": "owner",
+          "time": "2026-11-02 20:50"
+        },
+        {
+          "id": "dm-yeji-9",
+          "body": "嗯。到宿舍告诉我一声。",
+          "senderId": "yeji",
+          "time": "2026-11-02 20:51"
         }
       ]
     },
@@ -135,9 +352,22 @@
       ],
       "messages": [
         {
-          "id": "l1",
-          "body": "明天出门记得带外套！",
-          "senderId": "lia"
+          "id": "dm-lia-1",
+          "body": "有娜呀，明天出门记得带外套！早上会降温。",
+          "senderId": "lia",
+          "time": "2026-11-02 17:50"
+        },
+        {
+          "id": "dm-lia-2",
+          "body": "收到～姐姐也是！",
+          "senderId": "owner",
+          "time": "2026-11-02 17:52"
+        },
+        {
+          "id": "dm-lia-3",
+          "body": "还有，今天拍的照片发我一张ㅋㅋ",
+          "senderId": "lia",
+          "time": "2026-11-02 17:53"
         }
       ]
     },
@@ -151,9 +381,28 @@
       ],
       "messages": [
         {
-          "id": "r1",
+          "id": "dm-ryujin-1",
           "body": "你刚刚是不是又在看队长？ㅋㅋ",
-          "senderId": "ryujin"
+          "senderId": "ryujin",
+          "time": "2026-11-02 19:02"
+        },
+        {
+          "id": "dm-ryujin-2",
+          "body": "？我在看菜单。",
+          "senderId": "owner",
+          "time": "2026-11-02 19:03"
+        },
+        {
+          "id": "dm-ryujin-3",
+          "body": "菜单在队长手机上吗？",
+          "senderId": "ryujin",
+          "time": "2026-11-02 19:04"
+        },
+        {
+          "id": "dm-ryujin-4",
+          "body": "申留真，你最近真的很闲。",
+          "senderId": "owner",
+          "time": "2026-11-02 19:05"
         }
       ]
     },
@@ -167,73 +416,243 @@
       ],
       "messages": [
         {
-          "id": "c1",
-          "body": "明天能不能教我拍你那个自拍角度？",
-          "senderId": "chaeryeong"
+          "id": "dm-chaeryeong-1",
+          "body": "有娜，明天能不能教我拍你那个自拍角度？",
+          "senderId": "chaeryeong",
+          "time": "2026-11-02 16:22"
+        },
+        {
+          "id": "dm-chaeryeong-2",
+          "body": "当然可以！包教包会～",
+          "senderId": "owner",
+          "time": "2026-11-02 16:23"
+        },
+        {
+          "id": "dm-chaeryeong-3",
+          "body": "那我明天带相机。晚安！",
+          "senderId": "chaeryeong",
+          "time": "2026-11-02 22:01"
         }
       ]
     }
   ],
   "content": {
-    "instagram": [
-      {
-        "id": "ig-main",
-        "title": "公开账号动态",
-        "body": "今天也和成员们一起吃了好吃的🍜",
-        "sender": "有娜",
-        "time": "2026-11-02 20:10",
-        "kind": "post",
-        "meta": {
-          "account": "public"
-        }
-      },
-      {
-        "id": "ig-alt",
-        "title": "小号动态",
-        "body": "她今天把头发别到耳后了。明明是很普通的动作，我却记了好久。",
-        "sender": "匿名小号",
-        "time": "2026-11-02 22:16",
-        "kind": "post",
-        "meta": {
-          "account": "private"
-        }
-      }
-    ],
-    "twitter": [
-      {
-        "id": "x-alt",
-        "title": "小号",
-        "body": "偏心？可能吧。可是她值得。",
-        "sender": "匿名小号",
-        "time": "2026-11-02 22:32",
-        "kind": "post",
-        "meta": {
-          "account": "private"
-        }
-      },
-      {
-        "id": "x-fan",
-        "title": "粉丝讨论",
-        "body": "有人关注那个总给队长单独做应援的账号吗？一开始以为是普通CPF，最近发的东西也太像内部视角了吧……",
-        "sender": "粉丝",
-        "time": "2026-11-02 22:40",
-        "kind": "post"
-      }
-    ],
+    "phone": [],
+    "messages": [],
+    "contacts": [],
+    "photos": [],
+    "camera": [],
+    "safari": [],
     "notes": [
       {
-        "id": "n1",
-        "title": "不要忘记",
-        "body": "明天练习前买蜂蜜柚子茶。不要在姐姐面前表现得太明显。小号不要发练习室镜子里的反光。",
+        "id": "note-yuna-01",
+        "title": "今天要记得的事",
+        "body": "1. 明天练习前买蜂蜜柚子茶。\\n2. 给姐姐留一份布丁。\\n3. 小号不要发练习室镜子里的反光。\\n4. 不要在姐姐面前表现得太明显。",
         "sender": "有娜",
         "time": "2026-11-02 23:01",
         "kind": "note"
       }
-    ]
+    ],
+    "kakao": [],
+    "instagram": [
+      {
+        "id": "ig-main-01",
+        "title": "练习结束！",
+        "body": "今天也和大家一起完成了练习。回家的路上风很舒服🍂",
+        "sender": "@igotyou_na",
+        "time": "2026-10-29 21:14",
+        "kind": "post",
+        "folder": "大号",
+        "meta": {
+          "account": "public",
+          "handle": "@igotyou_na",
+          "location": "Seoul",
+          "likes": "186420"
+        },
+        "comments": [
+          "Lia: 今天辛苦啦💗",
+          "MIDZY: 有娜今天也好漂亮！"
+        ],
+        "likes": 186420
+      },
+      {
+        "id": "ig-main-02",
+        "title": "🍰",
+        "body": "练习结束后的奖励！今天的蛋糕真的很好吃ㅋㅋ",
+        "sender": "@igotyou_na",
+        "time": "2026-10-31 22:06",
+        "kind": "post",
+        "folder": "大号",
+        "meta": {
+          "account": "public",
+          "handle": "@igotyou_na",
+          "location": "Seoul",
+          "likes": "203118"
+        },
+        "comments": [
+          "礼志: 看起来很好吃",
+          "有娜: 下次一起去！"
+        ],
+        "likes": 203118
+      },
+      {
+        "id": "ig-main-03",
+        "title": "🖤",
+        "body": "最近喜欢这种天气。大家也要好好吃饭、好好休息。",
+        "sender": "@igotyou_na",
+        "time": "2026-11-02 20:10",
+        "kind": "post",
+        "folder": "大号",
+        "meta": {
+          "account": "public",
+          "handle": "@igotyou_na",
+          "likes": "128430"
+        },
+        "comments": [
+          "MIDZY: 姐姐也要幸福！"
+        ],
+        "likes": 128430
+      },
+      {
+        "id": "ig-alt-01",
+        "title": "没有特别的事",
+        "body": "她今天把头发别到耳后了。明明是很普通的动作，我却记了好久。",
+        "sender": "@not_a_bias_just_a_person",
+        "time": "2026-10-28 23:48",
+        "kind": "post",
+        "folder": "小号",
+        "meta": {
+          "account": "private",
+          "handle": "@not_a_bias_just_a_person",
+          "likes": "37"
+        },
+        "comments": [
+          "匿名用户: 又在说队长ㅋㅋ"
+        ],
+        "likes": 37
+      },
+      {
+        "id": "ig-alt-02",
+        "title": "🍵",
+        "body": "她说最近睡得不太好。希望今天能早点休息。",
+        "sender": "@not_a_bias_just_a_person",
+        "time": "2026-10-30 00:12",
+        "kind": "post",
+        "folder": "小号",
+        "meta": {
+          "account": "private",
+          "handle": "@not_a_bias_just_a_person",
+          "likes": "24"
+        },
+        "comments": [
+          "匿名用户: 姐姐粉真的好细心"
+        ],
+        "likes": 24
+      },
+      {
+        "id": "ig-alt-03",
+        "title": "",
+        "body": "有人总是把最后一颗糖留给别人。",
+        "sender": "@not_a_bias_just_a_person",
+        "time": "2026-11-02 22:20",
+        "kind": "post",
+        "folder": "小号",
+        "meta": {
+          "account": "private",
+          "handle": "@not_a_bias_just_a_person",
+          "likes": "19"
+        },
+        "comments": [
+          "匿名用户: 你到底有多偏心礼志ㅋㅋ"
+        ],
+        "likes": 19
+      },
+      {
+        "id": "ig-alt-story",
+        "title": "Story",
+        "body": "今天也希望她顺利。",
+        "sender": "@not_a_bias_just_a_person",
+        "time": "2026-11-02 22:22",
+        "kind": "post",
+        "folder": "小号",
+        "meta": {
+          "account": "private",
+          "story": "true",
+          "handle": "@not_a_bias_just_a_person"
+        },
+        "comments": [],
+        "likes": 0
+      }
+    ],
+    "twitter": [
+      {
+        "id": "x-alt-01",
+        "title": "",
+        "body": "偏心？可能吧。可是她值得。",
+        "sender": "@bluehour0526",
+        "time": "2026-10-30 23:11",
+        "kind": "post",
+        "folder": "小号",
+        "meta": {
+          "account": "private",
+          "handle": "@bluehour0526",
+          "views": "1240"
+        },
+        "comments": [
+          "这不就是礼志单推吗ㅋㅋ",
+          "CPF滤镜太厚了吧"
+        ],
+        "likes": 12
+      },
+      {
+        "id": "x-alt-02",
+        "title": "",
+        "body": "今天又看到她在所有人都走了以后，独自确认练习室的灯。队长真的很辛苦。",
+        "sender": "@bluehour0526",
+        "time": "2026-11-01 00:03",
+        "kind": "post",
+        "folder": "小号",
+        "meta": {
+          "account": "private",
+          "handle": "@bluehour0526",
+          "views": "890"
+        },
+        "comments": [
+          "你怎么知道这么多细节？",
+          "可能是看直拍看的吧（？）"
+        ],
+        "likes": 8
+      },
+      {
+        "id": "x-fan-01",
+        "title": "粉丝讨论",
+        "body": "有人关注那个总给队长单独做应援的账号吗？一开始以为是普通 CPF，最近发的东西也太像内部视角了吧……",
+        "sender": "MIDZY观察站",
+        "time": "2026-11-02 22:40",
+        "kind": "post",
+        "folder": "讨论",
+        "meta": {
+          "account": "feed",
+          "handle": "@midzy_watch",
+          "views": "18500"
+        },
+        "comments": [
+          "这个号真的很偏心礼志ㅋㅋ",
+          "但有些细节好奇怪",
+          "先别乱猜啦"
+        ],
+        "likes": 286
+      }
+    ],
+    "youtube": [],
+    "spotify": [],
+    "music": [],
+    "calendar": []
   },
   "variables": {
     "affection_yeji": 20,
-    "fan_suspicion": 3
+    "fan_suspicion": 3,
+    "alt_account_exposure": 0
   },
   "events": [],
   "tests": []
