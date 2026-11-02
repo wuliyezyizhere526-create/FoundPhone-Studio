@@ -3,7 +3,7 @@
   "id": "itzy-yuna-secret-crush",
   "title": "偏心的秘密｜申有娜的手机",
   "description": "虚构互动故事。玩家扮演成年艺人申有娜，在 ITZY 的日常、私聊和社交媒体中体验一段尚未说出口的暗恋。",
-  "revision": 3,
+  "revision": 4,
   "phone": {
     "owner": "申有娜",
     "date": "2026-11-02",
@@ -11,7 +11,7 @@
     "battery": 87,
     "network": "5G",
     "passcode": "0526",
-    "wallpaper": "sage",
+    "wallpaper": "photo",
     "theme": "light",
     "notifications": true
   },
