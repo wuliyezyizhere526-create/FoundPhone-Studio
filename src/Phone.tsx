@@ -460,20 +460,64 @@ function PhoneRuntime({
                   onSettings={onSettings}
                   onUi={(key, value) => {
                     const current = runtimeRef.current;
-                    update(
-                      dispatch(
-                        work,
-                        {
-                          ...current,
-                          ui: {
-                            ...current.ui,
-                            [app]: { ...current.ui?.[app], [key]: value },
-                          },
+                    const next = dispatch(
+                      work,
+                      {
+                        ...current,
+                        ui: {
+                          ...current.ui,
+                          [app]: { ...current.ui?.[app], [key]: value },
                         },
-                        "variable",
-                        `ui:${app}:${key}`,
-                      ),
+                      },
+                      "variable",
+                      `ui:${app}:${key}`,
                     );
+                    if (app === "kakao" && key === "yejiInteraction" && typeof value === "string") {
+                      try {
+                        const interaction = JSON.parse(value) as { text?: string; time?: string };
+                        const text = interaction.text || "";
+                        const stamp = interaction.time || next.time;
+                        const date = next.date || work.phone.date || "2026-11-02";
+                        const igBody = /吃|饭|甜|布丁|咖啡/.test(text)
+                          ? "她又提醒我好好吃饭。明明只是很普通的话，我还是记下来了。"
+                          : /累|辛苦|练习|休息/.test(text)
+                            ? "希望她今天可以早点休息。总觉得她总把自己放在最后。"
+                            : /想你|想姐姐|喜欢/.test(text)
+                              ? "有些话发出去以后，还是会忍不住反复回想。"
+                              : "今天也有一段很普通、但想偷偷收藏起来的对话。";
+                        const xBody = /吃|饭|甜|布丁|咖啡/.test(text)
+                          ? "她又说不要只吃甜食。知道啦……下次会乖乖吃饭。"
+                          : /累|辛苦|练习|休息/.test(text)
+                            ? "希望她今天真的有好好休息。"
+                            : "几句很平常的话，也足够让我开心一阵子。";
+                        const igItem = makeItem({
+                          title: " ",
+                          body: igBody,
+                          sender: "@not_a_bias_just_a_person",
+                          time: date + " " + stamp,
+                          kind: "post",
+                          folder: "小号",
+                          meta: { account: "private", handle: "@not_a_bias_just_a_person", likes: "0" },
+                        });
+                        const xItem = makeItem({
+                          title: "",
+                          body: xBody,
+                          sender: "@bluehour0526",
+                          time: date + " " + stamp,
+                          kind: "post",
+                          folder: "小号",
+                          meta: { account: "private", handle: "@bluehour0526", views: "0" },
+                        });
+                        next.messages = {
+                          ...next.messages,
+                          instagram: [...(next.messages.instagram || []), igItem],
+                          twitter: [...(next.messages.twitter || []), xItem],
+                        };
+                      } catch {
+                        // Keep the chat functional if a local update payload is malformed.
+                      }
+                    }
+                    update(next);
                   }}
                   work={work}
                 />
